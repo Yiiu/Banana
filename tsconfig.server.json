@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // "@config/*": ["app/config/*"],
+      // "@config": ["app/config"],
+      // "@controllers/*": ["app/controllers/*"],
+      // "@connector/*": ["app/connector/*"],
+      // "@plugins/*": ["app/plugins/*"],
+      // "@constants/*": ["app/constants/*"],
+      // "@utils/*": ["app/utils/*"],
+      // "@oauth/*": ["app/oauth/*"],
+      // "@oauth": ["app/oauth"],
+      // "@middlewares": ["app/middlewares/index.ts"]
+    },
+    "allowJs": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "charset": "utf8",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "outDir":"./build"
+  },
+  // "include": ["server", "server/**/*.ts", "config/**/*.ts", "test/**/*.ts", "server/**/*.json"]
+}
