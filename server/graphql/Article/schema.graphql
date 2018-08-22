@@ -1,0 +1,17 @@
+type Article {
+  id: ID!
+  html: String
+  markdown: String
+}
+
+type ArtilesQuery {
+  count: Int
+  page: Int
+  pageSize: Int
+  data: [Article]
+}
+
+input ArticleInput {
+  html: String!
+  markdown: String!
+}

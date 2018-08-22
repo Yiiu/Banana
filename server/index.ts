@@ -8,7 +8,7 @@ import { Container } from 'typedi';
 
 import { ApolloServer, makeExecutableSchema } from 'apollo-server-koa';
 
-import { query, schema } from './graphql/index';
+import { mutation, query, schema  } from './graphql/index';
 import { database } from './library/database';
 
 import * as conf from '../next.config.js';
@@ -27,6 +27,7 @@ database()
 
     const resolvers = {
       Query: query(),
+      Mutation: mutation()
     };
 
     const aplloSchema = makeExecutableSchema({

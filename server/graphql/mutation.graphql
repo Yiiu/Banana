@@ -1,0 +1,7 @@
+type CreateArticle {
+  id: String
+}
+
+type Mutation {
+  addArticle(article: ArticleInput!): Article
+}
