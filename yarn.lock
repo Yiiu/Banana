@@ -2207,6 +2207,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
+directory-tree@^2.0.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/directory-tree/download/directory-tree-2.1.0.tgz#e0c1a66f625481aaf7d603741f0d3d93cdd4867a"
+
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -4032,6 +4036,12 @@ next@^6.1.1:
     webpack-hot-middleware "2.19.1"
     webpack-sources "1.1.0"
     write-file-webpack-plugin "4.2.0"
+
+nextjs-export-path-map@^0.1.2:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/nextjs-export-path-map/download/nextjs-export-path-map-0.1.2.tgz#ee558181aa93a06ed08e39cae4640cc6316f7099"
+  dependencies:
+    directory-tree "^2.0.0"
 
 nice-try@^1.0.4:
   version "1.0.4"
