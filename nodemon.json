@@ -3,6 +3,6 @@
       "server/**/*.ts"
   ],
   "execMap": {
-      "ts": "ts-node --project tsconfig.server.json"
+      "ts": "ts-node --project tsconfig.server.json --compilerOptions '{\"module\":\"commonjs\"}'"
   }
 }

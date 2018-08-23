@@ -1,0 +1,12 @@
+type Setting {
+  # Id
+  id: ID!
+  # 网站标题
+  title: String
+  # 网站副标题
+  subtitle: String
+  # 网站描述
+  description: String
+  # 作者名
+  author: String
+}

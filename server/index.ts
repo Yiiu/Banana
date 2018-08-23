@@ -16,7 +16,7 @@ import router, { nextRoute } from './routes';
 
 const port = process.env.PORT || 3000;
 const dev = process.env.NODE_ENV !== 'production';
-
+console.log(conf);
 database()
   .then(() => {
     const app = next({
@@ -61,10 +61,10 @@ database()
         });
 
         server.use(logger());
-        // tslint:disable-next-line:no-shadowed-variable
-        server.use(async (ctx, next) => {
+
+        server.use(async (ctx, nextCbk) => {
           ctx.res.statusCode = 200;
-          await next();
+          await nextCbk();
         });
         graphqlServer.applyMiddleware({ app: server });
         server.use(router.routes());
